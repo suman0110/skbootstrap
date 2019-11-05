@@ -1,0 +1,27 @@
+{
+  "name": "custom-grid",
+  "version": "1.0.5",
+  "description": "Multiple Breakpoint with respective Grid column and Gutter Width",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suman0110/skbootstrap.git"
+  },
+  "keywords": [
+    "custom",
+    "grid",
+    "multiple",
+    "breakpoints",
+    "multiple",
+    "gutter"
+  ],
+  "author": "Suman Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suman0110/skbootstrap/issues"
+  },
+  "homepage": "https://github.com/suman0110/skbootstrap#readme"
+}
