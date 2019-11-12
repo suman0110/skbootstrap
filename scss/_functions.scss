@@ -20,6 +20,19 @@
   }
 }
 
+//Used to evaluete Sass maps like multiple columns and different breakpoint.
+//Column can be same at different breakpoint or can be different for different breakpoint
+@mixin _assert-mapping($map, $map-name) {
+  $prev-key: null;
+  $prev-num: null;
+  @each $key, $num in $map {
+    
+    $prev-key: $key;
+    $prev-num: $num;
+  }
+}
+
+
 // Starts at zero
 // Used to ensure the min-width of the lowest breakpoint starts at 0.
 @mixin _assert-starts-at-zero($map, $map-name: "$grid-breakpoints") {

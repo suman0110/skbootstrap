@@ -2,7 +2,7 @@
 //
 // Generate semantic grid columns with these mixins.
 
-@mixin make-container($gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+@mixin make-container($gutter: $grid-outer-width, $breakpoints: $grid-breakpoints) {
   width: 100%;
   @each $breakpoint, $gutter-width in $gutter {
     @include media-breakpoint-up($breakpoint, $breakpoints) {
