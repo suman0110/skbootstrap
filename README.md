@@ -1,19 +1,30 @@
 # Custom Grid
-Custom Grid is customise version of bootstrap grid where this is available with Multiple Grid column, multiple gutter width for respective multiple breakpoints.
+Custom Grid is customised version of the bootstrap grid where this is available with Multiple Grid column, multiple gutter width for respective multiple breakpoints.
 
-# Getting Started
+## Getting Started
 Default configurations are 3 breakpoints: 
-xs - 4  columns and gutter width 10px
-sm - 6  columns and gutter width 20px
-md - 12 columns and gutter width 30px
+
+col name | number of col | gutter width
+------------ | ------------- | -----------
+xs | 4  | 10px
+sm | 6  | 20px
+md | 12 | 30px
 
 If you want to use default configuration provided here. 
-Run `npm i custom-grid` to install this package.
-Create two files in src folder style.scss and index.js
-Add path of node modules custom-grid scss file in your style.scss like `@import "~custom-grid/scss/bootstrap-grid";` 
-Include style.scss path in index.js file like `import './style.scss';`
+* Run `npm i custom-grid` to install this package. 
 
+OR
+
+* You can download the folder and update the variable's value as per individual requirement.
+
+> You can use any build tool to compile the .scss file.
+
+## Webpack Configuration
 Below is the guidance for webpack configuration:
+1. Create two files in src folder style.scss and index.js
+2. Add the path of node modules custom-grid .scss file in your style.scss like `@import "~custom-grid/scss/bootstrap-grid";` 
+3. Include style.scss path in index.js file like `import './style.scss';`
+4. Add below code to webpack.config.js
 ```
 const path = require('path');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -34,7 +45,6 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        //exclude: /(node_modules)/,
         use: [miniCssExtractPlugin.loader,'css-loader', 'sass-loader'],
       }
     ]
@@ -47,11 +57,9 @@ module.exports = {
 };
 
 ```
-OR
 
-You can download the folder and update the variables value as per individual requirement.
 
-# Usage of function
+## Usage of  SCSS function
 Example to call sass function to create container or row or columns with respect to different breakpoints 
 
 ```
@@ -78,3 +86,8 @@ Example to call sass function to create container or row or columns with respect
   }
 }
 ```
+OR you can use old school style
+```
+<div class="col-4 col-sm-4 col-md-12">
+   ........
+</div>
