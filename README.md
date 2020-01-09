@@ -7,7 +7,7 @@ Default configurations are 3 breakpoints:
 col name | number of col | gutter width
 ------------ | ------------- | -----------
 xs | 4  | 10px
-sm | 6  | 20px
+sm | 8  | 20px
 md | 12 | 30px
 
 If you want to use default configuration provided here. 
@@ -88,6 +88,6 @@ Example to call sass function to create container or row or columns with respect
 ```
 OR you can use old school style
 ```
-<div class="col-4 col-sm-4 col-md-12">
+<div class="col-4 col-sm-8 col-md-12">
    ........
 </div>

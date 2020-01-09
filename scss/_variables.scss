@@ -104,9 +104,9 @@ $grid-gutter-width: (
 //
 // Set the outer width of the gutters for respective breakpoints.
 $grid-outer-width: (
-  xs: 24px,
-  sm: 16px,
-  md: 20px
+  xs: 10px,
+  sm: 20px,
+  md: 30px
 ) !default;
 
 @include _assert-mapping($grid-outer-width, "$grid-outer-width");
