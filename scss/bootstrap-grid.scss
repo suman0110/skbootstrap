@@ -29,26 +29,13 @@ html {
 @import "utilities/spacing";
 
 
-.newclass {
-  @include make-col-ready();
-  @include make-column(10, xs);
-  @include make-col-offset(1, 12);
-  @include media-breakpoint-down(xs) {
-      margin-bottom: 32px;
-  }
-  @include media-breakpoint-up(sm) {
-      @include make-column(3, sm);
-      @include make-col-offset(0, 12);
-  }
-  @include media-breakpoint-up(md) {
-      @include make-column(4, md);
-  }
-  &:hover {
-      .news-type {
-          color: $white;
-      }
-      .link-text-hover {
-          text-decoration: underline;
-      }
-  }
+ 
+html {
+  position: relative;
+}
+html.enabled::before {
+  visibility: visible;
+}
+html.enabled::after {
+  visibility: visible;
 }
