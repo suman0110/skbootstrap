@@ -1,6 +1,6 @@
 {
   "name": "custom-grid",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Multiple Breakpoint with respective Grid column and Gutter Width",
   "main": "index.js",
   "scripts": {
